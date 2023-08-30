@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Twitter Clone</title>
+</head>
+<body>
+    <header class="nav-bar">
+        <div class="container">
+            <!-- Hamburger Button -->
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <!-- Logo -->
+            <div class="logo">
+                <img src="twitter-logo.png" alt="Twitter Logo">
+            </div>
+            <!-- Navigation -->
+            <ul class="nav">
+                <li><a href="file:///D:/Wedsite/home.html">Home</a></li>
+                <li><a href="file:///D:/Wedsite/explore.html">Explore</a></li>
+                <li><a href="file:///D:/Wedsite/privatemessages.html">Private Messages</a></li>
+                <!-- Add more navigation links -->
+            </ul>
+            <!-- Tweet Button -->
+            <button class="tweet-button">Tweet</button>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Tweet Composer -->
+            <div class="tweet-composer">
+                <textarea id="tweet-text" placeholder="What's happening?"></textarea>
+                <button id="post-button" class="post-button">Tweet</button>
+            </div>
+            <!-- Tweets -->
+            <div class="tweets" id="tweets-container">
+                <!-- Tweets will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+</button>
+<!-- Camera Icon for Media Upload -->
+<div class="media-upload">
+    <label for="file-upload" class="file-label">
+        <i class="fas fa-camera"></i> Upload Media
+    </label>
+    <input type="file" id="file-upload" class="hidden-input" accept="image/*,video/*">
+</div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

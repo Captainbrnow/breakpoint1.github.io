@@ -1,0 +1,218 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, button, textarea {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('your-background-image.jpg'); /* Replace 'your-background-image.jpg' with the actual path to your background image */
+    background-size: cover; /* Adjust this property to fit your design needs */
+    background-repeat: no-repeat; /* Ensure the background image is not repeated */
+    background-attachment: fixed; /* Fixed background image */
+    background-position: center center; /* Center the background image */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.nav-bar {
+    background-color: #1da1f2;
+    color: white;
+    padding: 10px 0;
+}
+
+.nav-bar .container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.hamburger-menu {
+    display: none; /* Initially hide the hamburger menu on larger screens */
+    cursor: pointer;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #1da1f2;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 4px 0;
+    border-radius: 2px;
+}
+
+.nav {
+    margin-left: auto;
+    list-style: none;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.tweet-button {
+    background-color: #1da1f2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-content {
+    flex-grow: 1;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tweet-composer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tweet-composer textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    margin-right: 10px;
+}
+
+.post-button {
+    background-color: #1da1f2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tweets {
+    margin-top: 10px;
+}
+
+.tweet {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #1da1f2;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.tweet-content {
+    flex-grow: 1;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .nav {
+        margin-left: 0;
+    }
+
+    .nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .hamburger-menu {
+        display: flex; /* Show the hamburger menu */
+    }
+
+    /* Hide the navigation links on smaller screens */
+    .nav {
+        display: none;
+    }
+}
+.hidden-input {
+    display: none; /* Hide the file input */
+}
+
+.file-label {
+    cursor: pointer;
+    color: #1da1f2; /* Change the label color to match your design */
+}
+
+.file-label:hover {
+    text-decoration: underline;
+}
+/* Style for the media upload container */
+.media-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+/* Style for the camera icon */
+.fa-camera {
+    margin-bottom: 5px; /* Add some spacing between the icon and label */
+    font-size: 20px; /* Adjust the icon size as needed */
+}
+
+/* Style for the label */
+.file-label {
+    cursor: pointer;
+    color: #1da1f2; /* Change the label color to match your design */
+}
+
+.file-label:hover {
+    text-decoration: underline;
+}
